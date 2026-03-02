@@ -75,6 +75,12 @@ header .navbar ul li a:hover { color: #ff4757; border-bottom: .2rem solid #ff475
 /* Footer */
 footer { background: #250641; padding: 3rem 7%; }
 footer .box-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); gap: 2rem; }
+img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 footer .box h3 { color: #fff; font-size: 2.2rem; padding: 1rem 0; }
 footer .box p { color: #eee; font-size: 1.5rem; padding: .5rem 0; }
 footer .box p i { color: #ff4757; padding-right: .5rem; }
+
