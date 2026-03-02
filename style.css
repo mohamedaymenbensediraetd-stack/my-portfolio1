@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: all .2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body { background: #f7f7f7; }
+
+/* Header */
+header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.5rem 7%; background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo { font-size: 2.5rem; font-weight: 700; color: #250641; }
+
+header .navbar ul { display: flex; list-style: none; }
+header .navbar ul li { margin-left: 2rem; }
+header .navbar ul li a { font-size: 1.7rem; color: #250641; font-weight: 600; }
+header .navbar ul li a:hover { color: #ff4757; border-bottom: .2rem solid #ff4757; }
+
+/* Home Section */
+.home {
+    min-height: 100vh; display: flex; align-items: center;
+    flex-wrap: wrap; gap: 1.5rem; padding: 2rem 7%;
+    background: #f7f7f7; padding-top: 10rem;
+}
+
+.home .content { flex: 1 1 40rem; }
+
+.home img {
+    width: 250px !important;  /* الحجم الذي تريده */
+    height: 250px !important; /* نفس الحجم لضمان الدائرة */
+    max-width: 100% !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 auto !important; /* لتوسيط الصورة */
+}
+
+.home .content h1 { font-size: 5rem; color: #250641; }
+.home .content h1 span { color: #ff4757; }
+.home .content p { font-size: 2.5rem; color: #333; padding: 1rem 0; }
+
+.btn {
+    display: inline-block; margin-top: 1rem;
+    padding: 1rem 3rem; background: #250641;
+    color: #fff; border-radius: 5rem;
+    font-size: 1.7rem; transition: .3s;
+}
+.btn:hover { background: #ff4757; transform: scale(1.1); }
+
+/* Skills Section */
+.skills { background: #fff; padding: 5rem 7%; }
+.heading { text-align: center; font-size: 4rem; color: #250641; margin-bottom: 3rem; }
+.heading span { color: #ff4757; }
+
+.skills .container {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem; padding: 2rem; background: rgba(0, 0, 0, 0.05); border-radius: 1rem;
+}
+
+.skills .container .bar {
+    padding: 2rem; background: #fff; border-radius: 1rem;
+    text-align: center; box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.skills .container .bar img { height: 5rem; }
+.skills .container .bar span { display: block; font-size: 1.7rem; margin-top: 1rem; font-weight: 600; }
+
+/* Footer */
+footer { background: #250641; padding: 3rem 7%; }
+footer .box-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); gap: 2rem; }
+footer .box h3 { color: #fff; font-size: 2.2rem; padding: 1rem 0; }
+footer .box p { color: #eee; font-size: 1.5rem; padding: .5rem 0; }
+footer .box p i { color: #ff4757; padding-right: .5rem; }
