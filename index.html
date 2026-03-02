@@ -3,80 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio |mohamed aymen</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mohamed Aymen | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">My Portfolio</div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#edu">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-    <h2>About <span>Me</span></h2>
-    <div class="about-content">
-        <p>
-            I'm <strong>Mohamed Aymen</strong>, a motivated and disciplined <strong>Computer Science student</strong>. 
-            I have a strong passion for programming and web development, constantly seeking to improve my technical skills 
-            and build creative digital solutions. 
-        </p>
-        <p>
-            I love turning complex problems into simple, beautiful, and intuitive designs. 
-            My goal is to build websites that are functional and user-friendly.
-        </p>
-        <a href="cv.pdf" class="btn" target="_blank">Download My CV <i class="fas fa-file-download"></i></a>
-    </div>
-</section>
-</header>
+    <header>
+        <a href="/" class="logo">My Portfolio</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="home" class="hero">
-    <div class="content">
-        <h1>Hi There, <br> I'm <span>mohamed aymen</span></h1>
-        <p>I am into <em>Web Development</em></p>
-        <a href="#contact" class="btn">Hire Me <i class="fas fa-arrow-circle-right"></i></a>
-    </div>
-    <div> 
-        <h2>
-            is my gmail
-        </h2>
-        <a href="manaymencity6@gmail.com> Gmail</a>
-            
-        <h3> instagram </h3>
-            <a href="https://www.instagram.com/ben_aymen.06/?__pwa=1"> inta </a> 
-    <div class="image">
-       <img src="profile.png.png" alt="Profile">
-    </div>
-</section>
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Hi There,<br> I'm <span>Mohamed Aymen</span></h1>
+            <p>I am into <span class="typing-text">Web Development</span></p>
+            <a href="#about" class="btn">About Me <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="profile.png" alt="My Photo">
+        </div>
+    </section>
 
-<section id="skills" class="skills">
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-    <div class="container">
-        <div class="bar">
-            <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
-                <span>HTML</span>
+    <section class="about" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+        <div class="container">
+            <div class="content">
+                <h3>I'm Mohamed Aymen</h3>
+                <p>Computer science student. Motivated and disciplined IT student with a strong academic background and practical experience. Passionate about programming, web development, and continuously improving technical skills.</p>
+                <div class="resumebtn">
+                    <a href="cv.pdf" class="btn"><span>Resume</span> <i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>
         </div>
-        <div class="bar">
-            <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-                <span>CSS</span>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+        <div class="container">
+            <div class="bar">
+                <div class="info">
+                    <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JS">
+                    <span>JavaScript</span>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script src="script.js"></script>
-    <footer id="contact" style="text-align: center; padding: 40px; background: #f4f4f4;">
+    <footer id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3>Mohamed's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +213 XXXXXXXXX</p>
+                <p><i class="fas fa-envelope"></i> your-email@gmail.com</p>
+                <footer id="contact" style="text-align: center; padding: 40px; background: #f4f4f4;">
     <h3>تواصل معي</h3>
     <div class="social-links">
         <a href="https://www.facebook.com/ayman.aymen.147120/" target="_blank" style="margin: 0 10px; font-size: 30px; color: #3b5998;">
@@ -91,12 +95,9 @@
     </div>
     <p style="margin-top: 20px;">Designed by Mohamed Aymen</p>
 </footer>
-    
+            </div>
+        </div>
+    </footer>
+
 </body>
-
 </html>
-
-
-
-
-
