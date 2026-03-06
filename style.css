@@ -108,40 +108,30 @@ footer .box p i { color: #ff4757; padding-right: .5rem; }
     --light-color: #aaa;
 }
 
-
 #theme-toggler {
     position: fixed;
-    top: 1.5rem; right: 2rem;
-    z-index: 1000;
-    font-size: 2.5rem;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10000; 
     cursor: pointer;
-    color: var(--black);
+    font-size: 3rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: .5rem;
+    text-align: center;
+    background: #250641; 
+    color: #fff;       
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s ease;
 }
 
 
-body.active {
-    background-color: var(--bg);
-    color: var(--black);
-}
-:root.active {
-    --black: #fff;
-    --white: #111;
-    --bg: #222;
-    --light-color: #aaa;
+body.active #theme-toggler {
+    background: #fff;
+    color: #250641;
 }
 
-#theme-toggler {
-    position: fixed;
-    top: 1.5rem; right: 2rem;
-    z-index: 1000;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: var(--black);
+#theme-toggler:hover {
+    transform: rotate(360deg);
 }
-
-
-body.active {
-    background-color: var(--bg);
-    color: var(--black);
-}
-
