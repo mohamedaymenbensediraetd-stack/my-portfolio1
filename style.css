@@ -101,3 +101,47 @@ footer .box p i { color: #ff4757; padding-right: .5rem; }
     font-size: 3.5rem !important;
     margin-bottom: 1.5rem;
 }
+:root.active {
+    --black: #fff;
+    --white: #111;
+    --bg: #222;
+    --light-color: #aaa;
+}
+
+
+#theme-toggler {
+    position: fixed;
+    top: 1.5rem; right: 2rem;
+    z-index: 1000;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+
+body.active {
+    background-color: var(--bg);
+    color: var(--black);
+}
+:root.active {
+    --black: #fff;
+    --white: #111;
+    --bg: #222;
+    --light-color: #aaa;
+}
+
+#theme-toggler {
+    position: fixed;
+    top: 1.5rem; right: 2rem;
+    z-index: 1000;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+
+body.active {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
