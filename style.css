@@ -150,4 +150,22 @@ body.active #theme-toggler {
 #theme-toggler:hover {
     transform: rotate(360deg);
 }
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    transition: all .3s linear;
+}
+
+section {
+    background-color: var(--bg-color) !important;
+}
+
+.heading {
+    color: var(--primary-color) !important;
+}
+
+p {
+    color: var(--text-color) !important;
+}
+
 
