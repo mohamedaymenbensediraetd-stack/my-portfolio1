@@ -6,7 +6,7 @@
     <title>Mohamed Aymen | Testimonials</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
@@ -20,30 +20,27 @@
         body {
             background: #f4f7f6;
             color: #333;
-            line-height: 1.6;
-            overflow-x: hidden;
+            overflow-x: hidden; 
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 5rem 2rem;
+            text-align: center;
         }
 
         .heading {
-            text-align: center;
             font-size: 3.5rem;
             color: #250641;
             margin-bottom: 5rem;
         }
 
-        .heading span {
-            color: #ff4757;
-        }
+        .heading span { color: #ff4757; }
 
         .box-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2.5rem;
         }
 
@@ -52,77 +49,24 @@
             padding: 3rem;
             border-radius: 1.5rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            position: relative;
+            text-align: left;
             transition: 0.3s;
-            border-bottom: 5px solid transparent;
         }
 
-        .box:hover {
-            transform: translateY(-10px);
-            border-bottom: 5px solid #250641;
-        }
+        .box:hover { transform: translateY(-10px); }
 
-        .box i {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            font-size: 4rem;
-            color: #250641;
-            opacity: 0.1;
-        }
-
-        .box p {
-            font-size: 1.6rem;
-            color: #555;
-            margin-bottom: 2.5rem;
-            font-style: italic;
-        }
-
-        .user {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .user img {
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #f0f2f5;
-        }
-
-        .user h3 {
-            font-size: 1.8rem;
-            color: #250641;
-        }
-
-        .user span {
-            font-size: 1.4rem;
-            color: #ff4757;
-            display: block;
-        }
-
-        /* زر العودة للموقع الرئيسي */
+        .user { display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem; }
+        .user img { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #250641; }
+        
         .back-btn {
             display: inline-block;
-            margin-top: 4rem;
-            padding: 1.2rem 2.5rem;
+            margin-top: 5rem;
+            padding: 1rem 2.5rem;
             background: #250641;
             color: #fff;
             text-decoration: none;
-            border-radius: 5rem;
+            border-radius: 5px;
             font-size: 1.6rem;
-            transition: 0.3s;
-        }
-
-        .back-btn:hover {
-            background: #ff4757;
-        }
-
-        @media (max-width: 768px) {
-            html { font-size: 55%; }
-            .heading { font-size: 3rem; }
         }
     </style>
 </head>
@@ -132,54 +76,42 @@
         <h1 class="heading" data-aos="fade-down">Client <span>Testimonials</span></h1>
         
         <div class="box-container">
-            <div class="box" data-aos="fade-right" data-aos-delay="100">
-                <i class="fas fa-quote-right"></i>
-                <p>"Working with Mohamed was a great experience. He is a talented developer who pays attention to every small detail in the code."</p>
+            <div class="box" data-aos="fade-right" data-aos-duration="1000">
+                <p>"Mohamed is a very talented developer. Great experience!"</p>
                 <div class="user">
-                    <img src="https://i.pravatar.cc/100?u=1" alt="User">
-                    <div class="info">
-                        <h3>Akram Chenani</h3>
-                        <span>Full Stack Developer</span>
-                    </div>
+                    <img src="https://i.pravatar.cc/100?u=1">
+                    <div class="info"><h3>Akram</h3><span>Developer</span></div>
                 </div>
             </div>
 
-            <div class="box" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-quote-right"></i>
-                <p>"An amazing computer science student with a bright future. His Python projects are clean, efficient, and well-documented."</p>
+            <div class="box" data-aos="fade-up" data-aos-duration="1200">
+                <p>"Very disciplined and professional in his work."</p>
                 <div class="user">
-                    <img src="https://i.pravatar.cc/100?u=2" alt="User">
-                    <div class="info">
-                        <h3>Sarah James</h3>
-                        <span>Project Manager</span>
-                    </div>
+                    <img src="https://i.pravatar.cc/100?u=2">
+                    <div class="info"><h3>Sarah</h3><span>Designer</span></div>
                 </div>
             </div>
 
-            <div class="box" data-aos="fade-left" data-aos-delay="500">
-                <i class="fas fa-quote-right"></i>
-                <p>"Highly professional and very fast in delivering tasks. I recommend him for any web development or automation project."</p>
+            <div class="box" data-aos="fade-left" data-aos-duration="1400">
+                <p>"His Python skills are top-notch. Highly recommended."</p>
                 <div class="user">
-                    <img src="https://i.pravatar.cc/100?u=3" alt="User">
-                    <div class="info">
-                        <h3>Alex Smith</h3>
-                        <span>Tech Lead</span>
-                    </div>
+                    <img src="https://i.pravatar.cc/100?u=3">
+                    <div class="info"><h3>Alex</h3><span>Manager</span></div>
                 </div>
             </div>
         </div>
 
-        <div style="text-align: center;">
-            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
-        </div>
+        <a href="index.html" class="back-btn">Back to Home</a>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+       
         AOS.init({
-            duration: 1000,
-            offset: 120,
-            once: true
+            offset: 100,     
+            duration: 1000,   
+            easing: 'ease-in-out',
+            once: false,    
         });
     </script>
 </body>
