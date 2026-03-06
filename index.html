@@ -104,27 +104,17 @@
         </div>
     </footer>
     <script>
-let themeToggler = document.querySelector('#theme-toggler');
+    let themeToggler = document.querySelector('#theme-toggler');
 
-themeToggler.onclick = () => {
-    themeToggler.classList.toggle('fa-sun');
-    document.body.classList.toggle('active');
-    
-    if(document.body.classList.contains('active')){
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
+    themeToggler.onclick = () => {
+        themeToggler.classList.toggle('fa-sun');
+        document.body.classList.toggle('active'); 
     }
-};
-
-if(localStorage.getItem('theme') === 'dark'){
-    document.body.classList.add('active');
-    themeToggler.classList.add('fa-sun');
-}
 </script>
 
 </body>
 </html>
+
 
 
 
