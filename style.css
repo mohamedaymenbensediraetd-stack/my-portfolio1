@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root {
+    
+    --primary-color: #250641;
+    --bg-color: #fff;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+}
+
+body.active {
+  
+    --primary-color: #ff4757;
+    --bg-color: #111;
+    --text-color: #eee;
+    --light-bg: #222;
+}
 
 * {
     margin: 0; padding: 0;
@@ -135,3 +150,4 @@ body.active #theme-toggler {
 #theme-toggler:hover {
     transform: rotate(360deg);
 }
+
