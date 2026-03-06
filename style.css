@@ -222,38 +222,58 @@ body.dark-theme .footer .share a:hover {
 }
 
 
-/* التنسيق الافتراضي (الوضع الفاتح) */
+
 .footer .share a {
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
     font-size: 2.2rem;
-    border-radius: 50%; /* لجعلها دائرية */
+    border-radius: 50%; 
     margin: .7rem;
-    color: #fff;              /* لون الأيقونة أبيض */
-    background: #250641;      /* خلفية ملونة (لونك الأساسي) */
-    border: .2rem solid transparent; /* إطار شفاف */
-    display: inline-block;    /* لضمان الأبعاد */
+    color: #fff;              
+    background: #250641;     
+    border: .2rem solid transparent; 
+    display: inline-block;    
     text-align: center;
     transition: all .3s ease; 
     box-shadow: 0 .3rem 1rem rgba(0,0,0,0.1);
 }
 
-/* تأثير عند تمرير الفأرة (Hover) */
+
 .footer .share a:hover {
     color: #fff;
-    background: #ff4757; /* لون آخر عند التمرير */
-    transform: scale(1.1);   /* تكبير بسيط */
+    background: #ff4757;
+    transform: scale(1.1);  
 }
 
 body.dark-theme .footer .share a {
-    background: #333; /* خلفية داكنة للأيقونات */
+    background: #333;
     color: #fff;      
-    border: .2rem solid #555; /* إطار رمادي */
+    border: .2rem solid #555;
 }
 
 body.dark-theme .footer .share a:hover {
-    background: #ff4757; /* لون التمرير */
+    background: #ff4757;
     border-color: #ff4757;
+}
+
+.footer .box-container .box p,
+.footer .box-container .box h3,
+.footer .box-container .box a,
+.footer .box-container .box span,
+.footer .box-container .box i,
+.footer .credit {
+    color: #ffffff !important;
+}
+
+
+.footer .share a {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+.footer h3 {
+    color: #ffffff !important;
 }
 
