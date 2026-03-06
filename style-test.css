@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.testimonials {
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #250641;
+    margin-bottom: 5rem;
+}
+
+.heading span {
+    color: #ff4757;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.box {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    position: relative;
+    transition: 0.3s transform ease;
+    border: 1px solid transparent;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    border-color: #250641;
+}
+
+.box i {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 4rem;
+    color: #ff4757;
+    opacity: 0.1;
+}
+
+.box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.box .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.box .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f2f5;
+}
+
+.box .user h3 {
+    font-size: 1.2rem;
+    color: #250641;
+}
+
+.box .user span {
+    font-size: 0.9rem;
+    color: #ff4757;
+}
+
+/* التجاوب مع الهواتف */
+@media (max-width: 768px) {
+    .heading { font-size: 2.5rem; }
+}
