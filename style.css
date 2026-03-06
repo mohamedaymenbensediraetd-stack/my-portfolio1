@@ -190,4 +190,35 @@ body.dark-theme .heading span {
     color: #ff4757 !important; 
 }
 
+body.dark-theme footer, 
+body.dark-theme .footer {
+    background-color: #111 !important; 
+    color: #fff !important;          
+}
+
+body.dark-theme .footer h3, 
+body.dark-theme .footer .box h3 {
+    color: #fff !important; 
+}
+
+body.dark-theme .footer .box a, 
+body.dark-theme .footer p, 
+body.dark-theme .footer span {
+    color: #eee !important; 
+}
+
+body.dark-theme .footer .box a:hover {
+    color: #ff4757 !important; 
+}
+
+body.dark-theme .footer .share a {
+    color: #fff !important;
+    border-color: #fff !important; 
+}
+
+body.dark-theme .footer .share a:hover {
+    color: #ff4757 !important;
+    border-color: #ff4757 !important;
+}
+
 
