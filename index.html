@@ -122,9 +122,18 @@ if(localStorage.getItem('theme') === 'dark'){
     themeToggler.classList.add('fa-sun');
 }
 </script>
+    <script>
+    let themeToggler = document.querySelector('#theme-toggler');
+
+    themeToggler.onclick = () => {
+        themeToggler.classList.toggle('fa-sun'); 
+        document.body.classList.toggle('active');
+    };
+</script>
 
 </body>
 </html>
+
 
 
 
