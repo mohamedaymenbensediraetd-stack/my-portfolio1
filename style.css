@@ -271,9 +271,14 @@ body.dark-theme .footer .share a:hover {
     color: #ffffff !important;
     border-color: rgba(255, 255, 255, 0.3) !important;
 }
+.skills .box-container .box img {
+    height: 8rem; 
+    margin-bottom: 1rem;
+}
 
 
 .footer h3 {
     color: #ffffff !important;
 }
+
 
