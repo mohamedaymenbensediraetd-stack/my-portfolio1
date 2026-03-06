@@ -222,3 +222,38 @@ body.dark-theme .footer .share a:hover {
 }
 
 
+/* التنسيق الافتراضي (الوضع الفاتح) */
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.2rem;
+    border-radius: 50%; /* لجعلها دائرية */
+    margin: .7rem;
+    color: #fff;              /* لون الأيقونة أبيض */
+    background: #250641;      /* خلفية ملونة (لونك الأساسي) */
+    border: .2rem solid transparent; /* إطار شفاف */
+    display: inline-block;    /* لضمان الأبعاد */
+    text-align: center;
+    transition: all .3s ease; 
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,0.1);
+}
+
+/* تأثير عند تمرير الفأرة (Hover) */
+.footer .share a:hover {
+    color: #fff;
+    background: #ff4757; /* لون آخر عند التمرير */
+    transform: scale(1.1);   /* تكبير بسيط */
+}
+
+body.dark-theme .footer .share a {
+    background: #333; /* خلفية داكنة للأيقونات */
+    color: #fff;      
+    border: .2rem solid #555; /* إطار رمادي */
+}
+
+body.dark-theme .footer .share a:hover {
+    background: #ff4757; /* لون التمرير */
+    border-color: #ff4757;
+}
+
