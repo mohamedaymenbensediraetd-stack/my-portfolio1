@@ -122,17 +122,38 @@ if(localStorage.getItem('theme') === 'dark'){
     themeToggler.classList.add('fa-sun');
 }
 </script>
-    <script>
-    let themeToggler = document.querySelector('#theme-toggler');
+  <section class="footer">
+    </section>
 
-    themeToggler.onclick = () => {
-        themeToggler.classList.toggle('fa-sun'); 
-        document.body.classList.toggle('active');
-    };
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        let themeToggler = document.querySelector('#theme-toggler');
+
+        themeToggler.onclick = () => {
+            themeToggler.classList.toggle('fa-sun');
+            document.body.classList.toggle('dark-theme');
+            
+            if(document.body.classList.contains('dark-theme')){
+                localStorage.setItem('user-theme', 'dark');
+            } else {
+                localStorage.setItem('user-theme', 'light');
+            }
+        };
+
+        if(localStorage.getItem('user-theme') === 'dark'){
+            document.body.classList.add('dark-theme');
+            themeToggler.classList.add('fa-sun');
+        }
+
+        AOS.init({ duration: 1000, once: true });
+    </script>
+
+</body> </html>
 
 </body>
 </html>
+
 
 
 
